@@ -1,0 +1,207 @@
+/*******************************************************************/
+/*         Web del proyecto  - hoja de estilo inicial              */
+/*           Autor : Javier Miguel Martín Gallardo                 */
+/*                 Versión : 1.0 - 06/11/2022                      */
+/*******************************************************************/
+
+/************************* Overall style ***************************/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: btninscribirse;
+    src: url('./../fonts/Roboto-Regular.ttf');
+}
+
+body{
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body a, a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#wrapper{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+
+/************************** Menu and logo ***************************/
+
+#logo{
+    margin: auto;
+    background-color:#dfdfdf;
+}
+
+#menu{
+    background-color:#dfdfdf;
+    margin-top: -1%;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+/************************** Hero section ***************************/
+
+#hero{
+    background-image: url(../images/herosection1.jpg);
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 40%;
+}
+
+#herodiv { /*Position of button for register*/
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%,-50%);
+    border-radius:2em;
+    color:white;
+    width: 20%;
+    height: 8%;
+}
+
+#herolink{ /*Text of that "button"*/
+    color: white;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    top: 42%;
+    transform: translate(-0%,-24%);
+    font-family: btninscribirse;
+}
+
+
+#torneos{
+    width: 70%;
+    background-color:#dfdfdf;
+    height: 75vh;
+    margin-top: 2%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius:2em;
+}
+
+#normas{
+    height: 75vh;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#colaboraciones{
+    width: 70%;
+    background-color:#dfdfdf;
+    height: 75vh;
+    margin-top: 2%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius:2em;
+}
+
+#galeria{
+    height: 75vh;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/************************** First section **************************/
+
+#intro{
+    height: 75vh;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#values{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+}
+
+#values h1{
+    text-align: center;
+}
+
+
+#footer{
+    background-color:#dfdfdf;
+    height: 25vh;
+    margin-top: -2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/************************ Media queries ***************************/
+@media only screen and (width<=900px) {  
+    #imagenlogo{
+        margin: auto;
+        width: 40%;
+    }
+    #hero{
+        background-image: url(../images/herosection2.jpg);
+        height: 75vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: 40%;
+    }
+    #herodiv {
+        background-color:rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%,-50%);
+        border-radius:2em;
+        color:white;
+        width: 30%;
+        height: 10%;
+    }
+    #herolink{ 
+        color: white;
+        position: relative;
+        font-weight: bold;
+        font-size: 1rem;
+        top: 38%;
+        transform: translate(-0%,-24%);
+        font-family: btninscribirse;
+    }
+}
+
+@media only screen and (width<=600px) {
+    #herodiv {
+        background-color:rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%,-50%);
+        border-radius:2em;
+        color:white;
+        width: 40%;
+        height: 10%;
+    }
+}
