@@ -192,6 +192,14 @@ body a, a:link, a:visited{
 }
 
 @media only screen and (width<=600px) {
+    #hero{
+        background-image: url(../images/herosection2.jpg);
+        height: 75vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: 40%;
+    }
     #herodiv {
         background-color:rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(3px);
@@ -203,5 +211,14 @@ body a, a:link, a:visited{
         color:white;
         width: 40%;
         height: 10%;
+    }
+    #herolink{ 
+        color: white;
+        position: relative;
+        font-weight: bold;
+        font-size: 1rem;
+        top: 38%;
+        transform: translate(-0%,-24%);
+        font-family: btninscribirse;
     }
 }
