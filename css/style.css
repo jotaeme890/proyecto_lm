@@ -32,6 +32,24 @@ body a, a:link, a:visited{
     text-align: center;
 }
 
+.ir-arriba{
+    display:none;
+	padding:17px;
+	background:black;
+	font-size:10px;
+	color:white;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    z-index: 100;
+    border-radius: 50px;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px 4px #3c3c3c;
+}
+
 
 /************************** Menu and logo ***************************/
 
@@ -49,7 +67,6 @@ body a, a:link, a:visited{
 
 
 /************************** Hero section ***************************/
-
 #hero{
     background-image: url(../images/herosection1.jpg);
     height: 85vh;
@@ -83,48 +100,7 @@ body a, a:link, a:visited{
 }
 
 
-#torneos{
-    width: 70%;
-    background-color:#dfdfdf;
-    height: 75vh;
-    margin-top: 2%;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius:2em;
-}
-
-#normas{
-    height: 75vh;
-    margin-top: 2%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-#colaboraciones{
-    width: 70%;
-    background-color:#dfdfdf;
-    height: 75vh;
-    margin-top: 2%;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius:2em;
-}
-
-#galeria{
-    height: 75vh;
-    margin-top: 2%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
 /************************** First section **************************/
-
 #intro{
     height: 75vh;
     margin-top: 2%;
@@ -144,6 +120,55 @@ body a, a:link, a:visited{
 }
 
 
+/***************************** Torneos ******************************/
+#torneos{
+    width: 70%;
+    background-color:#dfdfdf;
+    height: 75vh;
+    margin-top: 2%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius:2em;
+}
+
+
+/***************************** Normas *******************************/
+#normas{
+    height: 75vh;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/************************ Colaboraciones ****************************/
+#colaboraciones{
+    width: 70%;
+    background-color:#dfdfdf;
+    height: 75vh;
+    margin-top: 2%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius:2em;
+}
+
+
+/*************************** Galeria *******************************/
+#galeria{
+    height: 75vh;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/**************************** Footer *******************************/
 #footer{
     background-color:#dfdfdf;
     height: 25vh;
