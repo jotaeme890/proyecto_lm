@@ -6,7 +6,7 @@
 
 
 /*********************** Función hamb ******************************/
-
+//Para hacer el menú responsive
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -15,6 +15,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
 
 /************************* Ir arriba *******************************/
 const $btnUp = document.getElementById("arriba");
@@ -42,7 +43,6 @@ window.addEventListener("scroll", (e)=>{
 		$btnUp.classList.add("hide");
 	}
 })
-
 window.addEventListener("click", (e)=>{
 	if(e.target === $btnUp || e.target.matches("fa fa-angle-up")){
 		window.scrollTo({
