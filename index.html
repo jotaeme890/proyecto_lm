@@ -8,7 +8,29 @@
         <link rel="stylesheet" href="./css/style.css">
 
         <link rel="icon" href="./images/favicon.png"/>
-        <script src ="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--METEMOS SCROLL:BEHAVIOR PARA TODOS LOS NAVEGADORES-->
+        <script>
+        $(document).ready(function(){
+        
+        $("a").on('click', function(event) {
+
+
+            if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+                window.location.hash = hash;
+            });
+            }
+        });
+        });
+        </script>
 
         <title>JJEventos</title>
     </head>
@@ -18,22 +40,27 @@
 
         <section id="wrapper">
             <div id="logo">
-                <img id="imagenlogo" src="./images/logojjpadel.png" alt="Logo JJeventospadel" width="20%">
+                <img id="imagenlogo" src="./images/logojjpadel.png" alt="Logo JJeventospadel">
             </div>
         </section>
 
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <a href="#intro">Introducción</a>
-                <a href="#torneos">Torneos</a>
-                <a href="#normas">Normas</a>
-                <a href="#colaboraciones">Colaboradores</a>
-                <a href="#galeria" >Galería</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </nav>
+        <div id="centrar">
+            <nav i="centrar2">
+                <div class="topnav" id="myTopnav">
+                    <a href="#intro">Introducción</a>
+                    <a href="#torneos">Torneos</a>
+                    <a href="#normas">Normas</a>
+                    <a href="#colaboraciones">Colaboradores</a>
+                    <a href="#galeria" >Galería</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
+                    <img src="./images/logojjpadel.png" width="20%">
+                </div>
+            </nav>
+        </div>
+
 
         <section id="wrapper">
                 <section id="hero">
@@ -74,7 +101,6 @@
 
         <section id="sector">
             <section id="torneos">
-                <!--Cuáles son los torneos e info, comentarle a Pilar de llevar a otra página con las tablas-->
                 <div class="tituloseccion">
                     <p>TORNEOS</p>
                 </div>
@@ -97,8 +123,21 @@
                         </div>
                         
                         <div class="saber">
-                            <a href="#">Saber más</a>
+                            <a id="Btntor">Saber más</a>
                         </div>
+
+                        <dialog id="modtor" class="modal">
+                            <div class="modal-content">
+                                <span id="closetor" class="close">&times;</span>
+                                <p>
+                                    Aquí mostraremos, los participantes y los emparejamientos,
+                                    así cómo un cuadro en forma de bracket con la clasificación de los equipos ganadores.
+                                </p>
+                                <p id="centro">
+                                    <strong>Hasta el próximo torneo, ¡Os esperamos!</strong>
+                                </p>
+                            </div>
+                        </dialog>
 
                 </section>
             </section>
@@ -106,7 +145,6 @@
 
         <section id="wrapper">
             <section id="normas">
-                <!--Recopilación de normas-->
                 <div class="tituloseccion">
                     <p>NORMAS</p>
                 </div>
@@ -114,7 +152,6 @@
         </section>
 
         <section id="setcol">
-                <!--Colaboraciones, con grid card, pequeña foto y breve descripción de lo que aportan-->
                 <section id="colaboraciones">
                     <div class="tituloseccion">
                         <p>COLABORADORES</p>
@@ -126,7 +163,7 @@
                             <div class="card">
                                 <img src="./images/SalvadorJardinero.jpg" style="width:100%">
                                 <div class="container">
-                                    <h1>Fruteria Jesú</h1>
+                                    <h1>Salvador Jardinería</h1>
                                 </div>
                                 </div>
                         </div>  
@@ -169,6 +206,37 @@
                 <div class="tituloseccion">
                     <p>GALERÍA</p>
                 </div>
+
+                <div class="saber">
+                    <a id="Btngal">Ver fotos</a>
+                </div>
+
+                <dialog id="modgal" class="modal">
+                    <div class="modal-content">
+                        <span id="closegal" class="close">&times;</span>
+
+                        <div class="row"> 
+                            <div class="column">
+                                <img src="./images/carpa.jpg" style="width:100%">
+                                <img src="./images/trofeo2.jpg" style="width:100%">
+                                <img src="./images/parejas8.jpg" style="width:100%">
+                                <img src="./images/parejas5.jpg" style="width:100%">
+                                <img src="./images/parejas6.jpg" style="width:100%">
+                                <img src="./images/parejas1.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="column">
+                                <img src="./images/trofeo1.jpg" style="width:100%">
+                                <img src="./images/parejas8.jpg" style="width:100%">
+                                <img src="./images/parejas9.jpg" style="width:100%">
+                                <img src="./images/parejas10.jpg" style="width:100%">
+                                <img src="./images/01_pista_padel.jpg" style="width:100%">
+                                <img src="./images/04_pista_padel.jpg" style="width:100%">
+                                <img src="./images/parejas7.jpg" style="width:100%">
+                            </div>
+                        </div>
+                </dialog>
+                
             </section>
         </section>
 
@@ -199,6 +267,7 @@
             </footer>
         </section>
 
-        <script src="./js/funciones.js"></script>
-    </body>
+      <script src="./js/funciones.js"></script>
+    
+    <body>
 </html>  
