@@ -231,8 +231,8 @@ nav{
 #sector{
     width: 100%;
     margin: auto;
-    padding-top: 3%;
-    margin-top: 7%;
+    padding-top: 2%;
+    margin-top: 5%;
     background-color: #e6e6e6;
     padding-bottom: 5%;
     color: rgb(0, 0, 0);
@@ -247,7 +247,7 @@ nav{
     margin-top: 3%;
 }
 
-.saber:hover{
+.saber a:hover{
     cursor: pointer;
 }
 
@@ -317,17 +317,19 @@ nav{
 
 /***************************** Normas *******************************/
 #normas{
-    height: 80vh;
-    margin-top: 5%;
+    margin-top: 8%;
+    padding-bottom: 8%;
 }
 
+#modnor p{
+    line-height: 170%;
+}
 
 /************************ Colaboraciones ****************************/
 #setcol{
     width: 100%;
     margin-top: 5%;
     margin: auto;
-    padding-bottom: 5%;
     padding-top: 2%;
     background-color: #e6e6e6;
     padding-bottom: 5%;
@@ -376,10 +378,10 @@ nav{
 
 /*************************** Galeria *******************************/
 #setgal{
-    padding-top: 6%;
+    margin-top: 7%;
 }
 
-#centro2{
+.centro2{
     text-align: center;
 }
 
@@ -488,6 +490,15 @@ nav{
         font-family: btninscribirse;
     }
 
+    .values{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+        line-height: 150%;
+        font-size: 1.2rem;
+    }
+
     #setgal{
         padding-top: 10%;
     }
@@ -577,6 +588,11 @@ nav{
     .grid3{
         display: grid;
         grid-template-columns:100%;
+    }
+
+    #normas{
+        margin-top: 12%;
+        padding-bottom: 12%;
     }
 
     .column img:hover{

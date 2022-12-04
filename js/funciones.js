@@ -74,6 +74,27 @@ window.onclick = function(event) {
 }
 
 
+var modalnor = document.getElementById("modnor");
+
+var btnnor = document.getElementById("Btnnor");
+
+var spannor = document.getElementById("closenor");
+
+btnnor.onclick = function() {
+	modalnor.style.display = "block";
+}
+
+spannor.onclick = function() {
+	modalnor.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modalnor) {
+		modalnor.style.display = "none";
+	}
+}
+
+
 var modalgal = document.getElementById("modgal");
 
 var btngal = document.getElementById("Btngal");
