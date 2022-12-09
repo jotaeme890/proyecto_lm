@@ -419,7 +419,7 @@ nav{
 
 .gridfooter{
     display: grid;
-    grid-template-columns:30% 40% 30%;
+    grid-template-columns:25% 25% 25% 25%;
 }
 
 .colfooter{
@@ -437,10 +437,32 @@ nav{
     margin-top: -4%;
 }
 
+.container2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 66.66%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
 .rrss{
     margin-top: 5%;
     font-size: 1.5rem;
     display: block;
+}
+
+#autor{
+    text-align: center;
+    background-color: #e6e6e6;
+    font-weight: bold;
 }
 
 
@@ -538,7 +560,11 @@ nav{
         display: none;
     }
 
+    .responsive-iframe {
+        display: none;
+    }
+
     .rrss{
-        margin-left: -30%;
+        margin-left: -75%;
     }
 }

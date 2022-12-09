@@ -67,12 +67,6 @@ spantor.onclick = function() {
 	modaltor.style.display = "none";
 }
 
-window.onclick = function(event) {
-	if (event.target == modaltor) {
-    modaltor.style.display = "none";
-	}
-}
-
 
 var modalnor = document.getElementById("modnor");
 
@@ -93,26 +87,3 @@ window.onclick = function(event) {
 		modalnor.style.display = "none";
 	}
 }
-
-
-var modalgal = document.getElementById("modgal");
-
-var btngal = document.getElementById("Btngal");
-
-var spangal = document.getElementById("closegal");
-
-btngal.onclick = function() {
-	modalgal.style.display = "block";
-}
-
-spangal.onclick = function() {
-	modalgal.style.display = "none";
-}
-
-window.onclick = function(event) {
-	if (event.target == modalgal) {
-		modalgal.style.display = "none";
-	}
-}
-
-/*************************  Galería  ******************************/
